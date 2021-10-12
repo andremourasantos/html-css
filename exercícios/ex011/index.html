@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Teste aumentar e diminuir o tamanho da janela do seu navegador e veja a imagem ser alterada para uma de tamanho correspondente!
+    </p>
+    <p>
+        Para configurar essa mudança utiliza-se a <em>tag</em> &lt;picture&gt;. Essa <em>tag</em> possibilita o carregamento de diferentes imagens dependendo de padrões pré-estabelecidos, que no caso é o de tamanho da janela do navegador.
+    </p>
+    <p>
+        O código final ficou dessa maneira:
+    </p>
+<pre>
+<code style="color: blue;">
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt;
+        &lt;source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt;
+        &lt;img src="imagens/foto-g.png" alt="Foto grande" type="image/png"&gt;
+    &lt;/picture&gt;
+</code>
+</pre>
+    <p>
+        Os <em>atributos</em> "source media" estão sendo utilizados, em ordem hierárquica, de cima para baixo em prioridade, para definir que imagem deve ser carregada baseando-se no tamanho da janela aberta.
+    </p>
+    <p>
+        Note que há três tamanho de imagem: A imagem carregada por padrão é a maior (foto-g.png), ela é a imagem da <em>tag</em> &lt;img src=...&gt;. A foto-g.png tem um tamanho de 1000px, portanto, caso a janela seja menor que 1050px (adicionou-se uma margem de 50px na conta), a imagem que deve abrir não é mais a foto-g.png, e sim uma menor, a foto-m.png, que contém 700px. O mesmo raciocínio segue para a exibição da foto-p.png.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto grande" type="image/png">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Toque esse áudio</p>
+    <audio src="midia/straw-squeak.mp3" controls loop autoplay></audio>
+</body>
+</html>

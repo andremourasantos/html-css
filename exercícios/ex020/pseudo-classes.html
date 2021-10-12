@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        @charset "UTF-8";
+        /* SELETOR PERSONALIZADO
+
+        :  =  pseudo-classe
+
+        */
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        main {
+            height: fit-content;
+            max-width: 80%;
+            height: fit-content;
+            margin: auto;
+            text-align: justify;
+        }
+
+        div.caixas3 {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+        }
+
+        div.caixas {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            background-color: #ffe4c490;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: #00000030 0px 0px 2px;
+            transition: 0.25s;
+        }
+
+        /*Anotações da pseudo-classe
+            A pseudo classe pode ser identificada no CSS pelos :        
+        */
+
+        div.caixas:hover {
+            background-color: bisque;
+            color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: #00000030 0px 0px 10px;
+            transform: scale(1.1, 1.1);
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Pseudo-classes</h1>
+            <p>As pseudo-classes não são classes de verdade, mas sim, elementos que podem ser configurados a partir de ações ou interações com o conteúdo do HTML. Por exemplo, abaixo você tem três caixas, todas são elementos <abbr title="&lt;div&gt;"><span style="color: royalblue;">div</span></abbr> e que foram configurados no CSS com a pseudo-classe <abbr title="div:hover"><span style="color: darkkhaki;">hover</span></abbr>.</p>
+        <div class="caixas3">
+            <div class="caixas" id="d1">01</div>
+            <div class="caixas" id="d2">02</div>
+            <div class="caixas" id="d3">03</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas </h1>
+    <!--Listas ordenadas-->
+    <div>
+        <h2>Listas ordenadas</h2>
+            <p>Você pode adicionar listas ordenadas com a <em>tag</em> &lt;ol&gt; e inserindo os itens da lista, cada um, com a <em>tag</em> &lt;li&gt;. A tag &lt;ol&gt; pode ser costumizada com os <em>atributos</em> <code>type=""</code> e <code>start=""</code>.</p>
+            <p>No caso do exemplo abaixo, a lista é do tipo &quot;A&quot; e começa a contar a partir do &quot;4&quot;, no caso, a partida da 4ª letra do alfabeto:</p>
+                <ol type="A" start="4">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            <p>O código ficou assim:
+                <pre>
+                    <code>
+        &lt;ol type="A" start="4"&gt;
+        &lt;li&gt;Item 1&lt;li&gt;
+        &lt;li&gt;Item 2&lt;li&gt;
+        &lt;li&gt;Item 3&lt;li&gt;
+        &lt;li&gt;Item 4&lt;li&gt;
+        &lt;li&gt;Item 5&lt;li&gt;
+        &lt;/ol&gt;
+                    </code>
+                </pre>
+            </p>
+    </div>
+    <!--Listas não ordenadas-->
+    <div>
+        <h2>Listas não ordenadas</h2>
+            <p>Da mesma maneira que se pode criar lsitas ordenadas, é possível criar listas não ordenadas, com a <em>tag</em> &lt;ul&gt;. Os mesmos <em>atribuitos</em> da <em>tag</em> &lt;ol&gt; também se aplicam a essa lista, exceto pelo <em>atributo</em> <code>start=""</code>, já que as listas não ordenadas não têm ordem ou hierarquia.</p>
+                <ul type="square">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            <p>O código da lista não ordenada também não mudou muito:
+                <pre>
+                    <code>
+        &lt;ul type="square"&gt;
+        &lt;li&gt;Item 1&lt;li&gt;
+        &lt;li&gt;Item 2&lt;li&gt;
+        &lt;li&gt;Item 3&lt;li&gt;
+        &lt;li&gt;Item 4&lt;li&gt;
+        &lt;li&gt;Item 5&lt;li&gt;
+        &lt;/ul&gt;
+                    </code>
+                </pre>
+            </p>
+    </div>
+    <!--Listas dentro de listas-->
+    <div>
+        <h2>Listas dentro de listas</h2>
+            <p>É possível também criar listas não ordenadas dentro de listas ordenadas e vice-versa.</p>
+            <ol>
+                <li>Primeiro item dentro da lista ordenada</li>
+                <ul type="square">
+                    <li>Agora este é um item de uma lista não ordeanada</li>
+                    <li>Como você pode ver, estes itens têm as características de uma lista não ordenada.</li>
+                </ul>
+                <li>Agora observe que este é outro item dentro da lista ordenada</li>
+                <ul type="square">
+                    <li>E este aqui é mais um item que está hierarquicamente abaixo do imediatamente anterior</li>
+                </ul>
+            </ol>
+    </div>
+    <!--Listas de definições-->
+    <div>
+        <h2>Listas de deifnições</h2>
+            <p>Por último, mas não menos importantes, temos as listas de definições: Elas funcionam exatamente igual a dicionários mesmo.</p>
+            <p>Para criá-la, basta inserir a <em>tag</em> <abbr title="Definition list">&lt;dl&gt;</abbr>, que faz referência a uma lista de termos e suas definições, seguida das <em>tags</em> <abbr title="Definition term">&lt;dt&gt;</abbr>, o termo a ser definido, e as <em>tags</em> <abbr title="Definition description">&lt;dd&gt;</abbr>, que seriam as descrições do termo.</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de marcação para criação do ćonteúdo de um site.</dd>
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para criação do design de um site.</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+            </dl>
+    </div>
+    <p><a href="texte.html">Vá para cá!</a></p>
+</body>
+</html>

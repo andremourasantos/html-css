@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Links</title>
+</head>
+<body>
+    <h1>Usandos links</h1>
+        <h2>Links externos</h2>
+            <p>Você pode usar links para outros sites fora do seu de duas maneiras diferentes:</p>
+            <ol>
+                <li>Fazendo com que o link externo se sobreponha ao seu site.</li>
+                <li>O site externo abre em uma nova guia no nnavegador.</li>
+            </ol>
+            <p>Para o seu site, é extremamente recomendável que você utilize o segundo método, pois dessa maneira o cliente ainda terá o seu site aberto, coisa que no primeiro método não acontece.</p>
+            <ul>
+                <li>Veja dois exemplos de aplicação:</li>
+                    <ol>
+                        <li>Clique <a href="https://www.youtube.com">nesse link</a> para abrir o YouTube.</li>
+                        <li>Clique <a href="https://youtube.com" target="_blank" rel="external">nesse link</a> para abrir o Youtube, mas em outra guia do navegador.</li>
+                    </ol>
+            </ul>
+    <h2>Links internos</h2>
+         <p>Para usar links internos tem algumas diferenças, tanto no código quanto na própria organização interna que você deve fazer do seu site.</p>
+         <p>Vamos começar com os seguintes exemplos, como se fosse um menu de interação:</p>
+            <ul>
+                <li>Você pode ir para a <a href="pag02.html" target="_self" rel="next">página 2</a>.</li>
+                <li>E você também ir pode para a <a href="Teste/pag03.html" target="_self" rel="next">página 3</a>.</li>
+            </ul>
+    <h2>Links para download</h2>
+    <p>Você pode criar links para donwload de arquivos no seu site utilziando a mesma <em>tag</em> &lt;a&gt; que anteriormente, apenas adicionando os <em>atributos</em> de <code>download="[nomedoarquivo].pdf"</code> e <code>target="application/pdf"</code>, por exemplo.</p>
+    <p>Para os <em>parâmetros</em> do <em>atributo</em> <code>target</code>, você pode conferir o <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" type="external" rel="nofollow">site da IANNA</a> sobre Media Types.</p>
+    <ul>
+        <li><a href="PDF/Currículo - André Moura Santos (Curitiba, PR).pdf" download="Currículo - André Moura Santos (Curitiba, PR).pdf" type="application/PDF">Baixe este arquivo em PDF.</a></li>
+        <li><a href="PDF/Certificados.zip" download="Certificados.zip" type="application/ZIP">Baixe este arquivo ZIP.</a></li>
+    </ul>
+</body>
+</html>

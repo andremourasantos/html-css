@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+</head>
+<body>
+    <h1>Página 3</h1>
+    <p>Essa é a página 3, ela está em outra pasta, o que quer dizer que para acessar essa página e para sair dela são necessárias pequenas alterações no <em>tag</em> &lt;a&gt; e seus <em>atribuitos</em>.</p>
+    <p>O código, agora, ficou deste jeito:</p>
+   
+<pre>
+<code>
+&lt;a href="../index.html" target="_self" rel="prev"&gt;página principal&lt;/a&gt;
+</code>
+</pre>
+    
+    <p>O que significa cada coisa? Isso é bem fácil de explicar!</p>
+    <ul>
+        <li>O "../" inserido na tag <em>href=""</em> simboliza um comando para o servidor retornar uma pasta na navegação dos aquivos do site. Na pasta anterior, ele deve procurar por "index.html" e exibidir o resultado para o cliente.</li>
+        <li>O atribuito <em>target="_self"</em> simboliza que a página deve ser aberta sobreescrevendo a atual, ou seja, na mesma guia.</li>
+        <li>E por fim, o atribuito <em>rel="prev"</em> simboliza que a página referida é anterior a página atual nos termos de organização do site.</li>
+    </ul>
+    <p>Você pode voltar para a <a href="../index.html" target="_self" rel="prev">página principal</a> agora.</p>
+</body>
+</html>

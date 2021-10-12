@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @charset "UTF-8";
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #EFEFEF;
+            color: #4A403A;
+            font-size: 12px;
+            padding: 0px;
+        }
+
+        main {
+            margin: 0px auto;
+            max-width: 700px;
+        }
+
+        a {
+            color: #A45D5D;
+            margin: auto;
+            margin-inline: 20px;
+            text-align: center;
+            text-decoration: none;
+            transition-duration: 150ms;
+        }
+
+        a:hover {
+            color: #FFC069;
+            padding: 0px 10px;
+        }
+
+        nav {
+            width: fit-content;
+            margin: 0px auto 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        section {
+            background-color: #A45D5D;
+            margin: 30px 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #FFC069;
+            text-align: justify;
+            box-shadow: #00000030 0px 0px 5px;
+            transition-duration: 250ms;
+        }
+
+        section > h2 {
+            color: #4A403A;
+            margin-bottom: 10px;
+            width: fit-content;
+            background-color: #ffebcd;
+            padding: 10px 15px;
+            border-radius: 9999px;
+        }
+
+        section > article > h3 {
+            font-size: 1.5em;
+        }
+
+        article {
+            transition-duration: 250ms;
+        }
+
+        article > p {
+            color: #EFEFEF;
+        }
+
+        article > aside > p {
+            color: #EFEFEF90;
+            text-align: right;
+        }
+
+        article > aside > a.compartilhamento {
+            display: none;
+        }
+
+        article > img {
+            margin: 20px auto 0px auto;
+            height: 150px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        article:hover {
+            transition-duration: 150ms;
+            border-radius: 10px;
+            padding: 5px 25px;
+            background-color: #4A403A50;
+        }
+
+        article:hover > aside > a.compartilhamento {
+            display: block;
+            width: fit-content;
+            background: #4A403A;
+            margin: 20px auto 10px auto;
+            padding: 1px 15px;
+            border-radius: 10000px;
+            font-weight: bold;
+            color: white;
+            transition-duration: 150ms;
+        }
+
+        article:hover > aside > a.compartilhamento:hover {
+        padding: 2px 20px;
+        box-shadow: black 0px 0px 5px;
+        }
+
+        footer {
+            width: fit-content;
+            margin: 10px auto;
+            padding: 1px 15px;
+            border-radius: 100px;
+            background-color: #FFC069;
+            color: #4A403A;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="tendências">
+            <h2>Notícias sobre o mundo</h2>
+            <article>
+                <img src="https://images.unsplash.com/photo-1590217798520-fb5199c5d5a1?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Teste">
+                <h3>Tendências de mercado</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptate! Explicabo quaerat vel voluptas expedita, similique dolorem alias perferendis. Ad totam necessitatibus hic tempora laborum itaque nostrum temporibus omnis ratione!</p>
+                    <aside>
+                        <p>Artigo escrito por André Moura · 17 minutos atrás</p>
+                        <a class="compartilhamento" href="#">
+                            <p class="compartilhamento">Compartilhe agora!</p>
+                        </a>
+                    </aside>
+            </article>
+            <article>
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                <h3>Mundo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae modi, deserunt, voluptatibus omnis consequuntur vero dignissimos quasi quaerat obcaecati facere ab voluptas sequi optio commodi minus. Numquam, quasi id! Quisquam!</p>
+                    <aside>
+                        <p>Artigo escrito por André Moura · 17 minutos atrás</p>
+                        <a class="compartilhamento" href="#"><p class="compartilhamento">Compartilhe agora!</p></a>
+                    </aside>
+            </article>
+        </section>
+
+        <section id="notícias">
+            <h2>Notícias sobre o Brasil</h2>
+            <article>
+                <img src="https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8Ym84alFLVGFFMFl8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                <h3>Notícia sobre o Brasil</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores debitis, fugit quibusdam sequi voluptate ducimus cupiditate pariatur provident incidunt cum iusto commodi reprehenderit praesentium quod, voluptas excepturi saepe? Molestiae, delectus.</p>
+                <aside>
+                    <p>Artigo escrito por André Moura · 7 minutos atrás</p>
+                    <a class="compartilhamento" href="#">
+                        <p class="compartilhamento">Compartilhe agora!</p>
+                    </a>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por André Moura Santos.</p>
+    </footer>
+</body>
+</html>

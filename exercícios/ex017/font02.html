@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes internas</title>
+    <style>
+        @font-face {
+            font-family: "Love";
+            src: url('love\ story.ttf');
+            /* Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        h1 {
+            font-family: 'Love', serif;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        p {
+            font-family: sans-serif;
+            text-align: justify;
+            text-indent: 3em;
+            /*Text-indent é a identação, o espaço no começo do parágrafo.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes internas</h1>
+    <p>Para utilizar fontes nessa página você deve ter o arquivo delas no seu computador. As fontes aqui estão dispostas direto na máquina/servidor e não são puxadas de outro site. Para importar a fonte, você precisa do arquivo da fonte, que pode ser tanto <strong>.ttf</strong> quanto <strong>.otf</strong> (os mais famosos) e você precisa importa-lá usando a regra <span style="color: purple;">@font-face</span>.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis, nobis consectetur quod laboriosam at quis dolore facilis est natus repellendus id enim inventore delectus. Tempore consectetur asperiores sapiente inventore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem voluptate placeat, impedit ullam error hic! Iure adipisci similique voluptate molestiae sint, vel deserunt quod aut eveniet. Tempore, dolores optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati vero velit suscipit debitis sit distinctio iure inventore qui quidem ad magni non ratione consectetur modi, voluptates cupiditate nisi et.</p>
+</body>
+</html>
